@@ -23,11 +23,11 @@ public class LoginPageTest {
     public void correctLogin() {
         driver.get(loginUrl);
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-        driver.findElement(By.id("txtUserName")).sendKeys("salimkartal@outlook.com.tr");
+        driver.findElement(By.id("txtUserName")).sendKeys("***");
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.findElement(By.id("btnLogin")).click();
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-        driver.findElement(By.id("txtPassword")).sendKeys("29Ekim2019");
+        driver.findElement(By.id("txtPassword")).sendKeys("***");
     }
     @After
     public void tearDown() {
